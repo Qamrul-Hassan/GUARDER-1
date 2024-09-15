@@ -8,12 +8,20 @@
   <link rel="stylesheet" href="/public/output.css">
  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+ <!-- fonts style -->
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+ <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
 </head>
-<body class="bg-black text-white font-sans">
+<body class="bg-black">
     <!-- Top Info Bar -->
-    <header class=" w-full absolute bg-black">
-        <div class="bg-gray-800 text-yellow-600 flex justify-around py-2">
+    <header class=" w-full absolute z-20">
+        <div class="bg-gray-900 text-yellow-400 flex justify-around py-2">
             <div class="container mx-auto flex justify-around ">
                 <div class="flex space-x-96 justify-around">
                     <a href="#" class="">
@@ -49,19 +57,61 @@
     </header>
   
   
-  <section class="relative">
-    <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('/images/hero-bg.jpg');"></div>
-    <div class="relative container mx-auto flex items-center justify-center h-screen">
+  
+<!-- Hero Section with Swiper -->
+<section class="relative">
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bg.jpg');"></div>
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  
+  <!-- Swiper Slider -->
+  <swiper-container style="--swiper-pagination-color: rgb(243 179 8)" class="mySwiper" speed="600" parallax="true" pagination="true" pagination-clickable="true">
+  
+   
+    <swiper-slide>
+      <div class="relative container mx-auto flex items-center justify-center h-screen">
         <div class="text-start text-white">
-            <h1 class="text-5xl font-bold">Your Safety <br><span class="text-yellow-500">Our Responsibility</span></h1>
-            <p class="mt-10 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad minim veniam <br>consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad minim veniam</p>
-            <div class="mt-20 space-x-4">
-                <a href="#" class=" bg-white text-black  text-lg py-3 px-10 border-2 rounded hover:bg-transparent hover:text-white hover:border-white transition-colors duration-300">Read more</a>
-                <a href="#" class="bg-yellow-500 text-white  text-lg py-3 px-10 border-2 border-yellow-500 rounded hover:bg-transparent hover:text-yellow-400 transition-colors duration-300 ">Get A Quote</a>
-            </div>
+          <h1 class="text-5xl font-bold">Your Safety <br><span class="text-yellow-500">Our Responsibility</span></h1>
+          <p class="mt-10 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad minim veniam <br>consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad minim veniam</p>
+          <div class="mt-20 space-x-4">
+            <a href="#" class=" bg-white text-black  text-lg py-3 px-10 border-2 rounded hover:bg-transparent hover:text-white hover:border-white transition-colors duration-300">Read more</a>
+            <a href="#" class="bg-yellow-500 text-white  text-lg py-3 px-10 border-2 border-yellow-500 rounded hover:bg-transparent hover:text-yellow-400 transition-colors duration-300">Get A Quote</a>
+          </div>
         </div>
-    </div>
+      </div>
+    </swiper-slide>
+
+    
+    <swiper-slide>
+      <div class="relative container mx-auto flex items-center justify-center h-screen">
+        <div class="text-start text-white">
+          <h1 class="text-5xl font-bold">Your Safety <br><span class="text-yellow-500">Our Responsibility</span></h1>
+          <p class="mt-10 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad minim veniam <br>consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad minim veniam</p>
+          <div class="mt-20 space-x-4">
+            <a href="#" class=" bg-white text-black  text-lg py-3 px-10 border-2 rounded hover:bg-transparent hover:text-white hover:border-white transition-colors duration-300">Read more</a>
+            <a href="#" class="bg-yellow-500 text-white  text-lg py-3 px-10 border-2 border-yellow-500 rounded hover:bg-transparent hover:text-yellow-400 transition-colors duration-300">Get A Quote</a>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+    
+    <swiper-slide>
+      <div class="relative container mx-auto flex items-center justify-center h-screen">
+        <div class="text-start text-white">
+          <h1 class="text-5xl font-bold">Your Safety <br><span class="text-yellow-500">Our Responsibility</span></h1>
+          <p class="mt-10 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad minim veniam <br>consectetur adipiscing elit, sed do eiusmod magna aliqua. Ut enim ad minim veniam</p>
+          <div class="mt-20 space-x-4">
+            <a href="#" class=" bg-white text-black  text-lg py-3 px-10 border-2 rounded hover:bg-transparent hover:text-white hover:border-white transition-colors duration-300">Read more</a>
+            <a href="#" class="bg-yellow-500 text-white  text-lg py-3 px-10 border-2 border-yellow-500 rounded hover:bg-transparent hover:text-yellow-400 transition-colors duration-300">Get A Quote</a>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+  </swiper-container>
 </section>
+
+<!--WHO WE ARE?s-->
 
 <section class="about_section py-12 bg-white relative">
     <div class="container mx-auto">
@@ -153,8 +203,52 @@
     </div>
   </section>
 
-
-
+  <!--What is says our clients-->
+  <section class="clients-main py-16 bg-gray-50">
+    <div class="container mx-auto mb-8">
+      <div class="head text-center">
+        <h2 class="text-3xl font-bold">What is says our clients</h2>
+        <div class="w-16 h-1.5 bg-yellow-400 mx-auto mt-2 mb-4"></div>
+      </div>
+      <!-- Swiper Slider -->
+  
+      <swiper-container class="mySwiper" navigation="true">
+        <!-- Slide 1 -->
+        <swiper-slide>
+          <div class="flex justify-center">
+            <img src="/images/client.png" alt="#" class="w-32 h-24">
+          </div>
+          <h4 class="font-bold text-center">Minim Veniam</h4>
+          <p class=" text-gray-600 mt-2 max-w-xl text-center mx-auto ">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </swiper-slide>
+        <!-- Slide 2 -->
+        <swiper-slide>
+          <div class="flex justify-center">
+            <img src="/images/client.png" alt="#" class="w-32 h-24">
+          </div>
+          <h4 class="font-bold text-center">Minim Veniam</h4>
+          <p class=" text-gray-600 mt-2 max-w-xl text-center mx-auto ">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </swiper-slide>
+        <!-- Slide 3 -->
+        <swiper-slide>
+          <div class="flex justify-center">
+            <img src="/images/client.png" alt="#" class="w-32 h-24">
+          </div>
+          <h4 class="font-bold text-center">Minim Veniam</h4>
+          <p class=" text-gray-600 mt-2 max-w-xl text-center mx-auto ">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </swiper-slide>
+  
+      </swiper-container>
+    </div>
+  </section>
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
   </body>
   
